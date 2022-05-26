@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Idle.nope</title>
+  </head>
+
+  <body>
+    <canvas
+      id="canvas"
+      width="400"
+      height="100"
+      style="border:5px solid #d3d3d3;"
+    >
+      Your browser does not support the canvas element, or this is a test. Which
+      one do you think it is?
+    </canvas>
+
+    <script src="/script.js"></script>
+
+    <p></p>
+    <button onclick="makeCoin();">Make coin</button> Cost to make coin: Nothing!
+    <p></p>
+    <button onclick="buyMint();">Buy Coin Mint</button> Cost to buy mint: 100
+    coin, plus 10 for every transcendence.
+    <p></p>
+    <button onclick="recycleMint();">Recycle Mint</button> Recycling mints can
+    only be done after the first transcendence. Costs 1 bot.
+    <p></p>
+    <button onclick="constructBot();">Build Bots</button> Cost to make bots: 100
+    coin, plus 20 for every bot, and 1 mint for every transcendence.
+    <p></p>
+    <button onclick="transcend();">Transcend!</button> Cost to transcend: 2000
+    coin, 200 mints, and 20 bots.
+    <p></p>
+    <button
+      onclick="
+                    localStorage.clear();
+                     player.bots = 0;
+                     player.coin = 0;
+                     player.mint = 0;
+                     player.transits = 0;
+                    alert('Your save has been deleted');
+                    "
+    >
+      Clear Save
+    </button>
+  </body>
+</html>
